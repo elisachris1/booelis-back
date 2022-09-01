@@ -24,15 +24,6 @@ public class MyAppConfig implements WebMvcConfigurer {
 
 
     }
-    @Bean
-    public WebMvcConfigurer corsConfigurer()
-    {
-        return new WebMvcConfigurer() {
-            @Override
-            public void addCorsMappings(CorsRegistry registry){
-                registry.addMapping("/**").allowedOrigins("/**")
-                        .allowedOrigins("https://localhost:4200");
-            }
-        };
-    }
+
+
 }
